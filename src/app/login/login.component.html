@@ -1,0 +1,79 @@
+<!-- <div class="wrapper">
+  <div class="logo">
+      <img src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-bird-symbols-png-logo-0.png" alt="">
+  </div>
+  <div class="text-center mt-4 name">
+      Twitter
+  </div>
+  <form class="p-3 mt-3">
+      <div class="form-field d-flex align-items-center">
+          <span class="far fa-user"></span>
+          <input type="text" name="userName" id="userName" placeholder="Username">
+      </div>
+      <div class="form-field d-flex align-items-center">
+          <span class="fas fa-key"></span>
+          <input type="password" name="password" id="pwd" placeholder="Password">
+      </div>
+      <button class="btn mt-3">Login</button>
+  </form>
+  <div class="text-center fs-6">
+      <a href="#">Forget password?</a> or <a href="#">Sign up</a>
+  </div>
+</div> -->
+
+
+
+<div class="limiter" id="login">
+  <div class="container-login100" style="background-image:url(../../assets/img/header.jpg)">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+                  <div class="login_topimg">
+                  </div>
+                  <div class="wrap-login100">
+                      <!-- <div class="alert alert-danger" *ngIf="loginError2">
+                          {{loginErrorMsg.message}}
+                       </div> -->
+                      <form  [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="login100-form validate-form">
+                          <!-- <img src="{{imagePath}}img/crystal_logo.png"  class="justify-content-center" height="80" width="350"/> -->
+                          <h2 class="login100-form-title" style="text-align: center;padding: 20px;"><strong>Nexait Admin</strong></h2>
+                          <span class="login100-form-title" style="text-align: center;padding: 20px;">Login to your account</span>
+                          <!-- <span class="login100-form-subtitle m-b-16">Login to your account </span> -->
+                          <div class="wrap-input100 validate-input m-b-16"
+                              data-validate="Valid email is required: ex@abc.xyz"> <input type="text" class="input100" name="email" formControlName="email"
+                              placeholder="Enter your Email" autocomplete="off" /> <span class="focus-input100"></span> <span
+                                  class="symbol-input100"> <span class="glyphicon glyphicon-user"></span> </span>
+                          </div>
+                          <div class="wrap-input100 validate-input m-b-16" data-validate="Password is required">
+                              <input type="password" placeholder="Password" class="input100"
+                                          name="password" formControlName="password" autocomplete="off"><span
+                                  class="focus-input100"></span> <span class="symbol-input100"> <span
+                                      class="glyphicon glyphicon-lock"></span> </span> </div>
+                          <div class="flex-sb-m w-full p-b-30">
+                              <div class="contact100-form-checkbox">
+                                  <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+                                  <label class="label-checkbox100" for="ckb1">
+                                      Remember me
+                                  </label>
+                              </div>
+                              <div>
+                                  <a href="" class="txt1">
+                                      Forgot Password?
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="container-login100-form-btn p-t-25"> <button class="login100-form-btn"> Login
+                              </button> </div>
+                      </form>
+                      <div style="text-align: center;padding: 9px;"><span
+                          class="alert-danger text-center">{{showmsg}}</span></div>
+                      <!-- <div class="service-error" *ngIf="error">
+                          <h1>{{error.errorTitle}}</h1>
+                          <h3>{{error.errorDesc}}</h3>
+                      </div> -->
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
